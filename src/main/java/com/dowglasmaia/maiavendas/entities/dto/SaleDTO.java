@@ -3,6 +3,7 @@ package com.dowglasmaia.maiavendas.entities.dto;
 import com.dowglasmaia.maiavendas.entities.Sale;
 import lombok.*;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 
 @Getter
@@ -10,7 +11,7 @@ import java.time.LocalDate;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class SaleDTO {
+public class SaleDTO implements Serializable {
 
     private Long id;
     private Integer deals;
